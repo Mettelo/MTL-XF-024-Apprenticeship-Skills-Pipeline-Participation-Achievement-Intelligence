@@ -1,66 +1,68 @@
 # MTL-XF-024 — Project brief
 
-## Engagement
+This is a **simulated confidential-client engagement using official public/open data**. Client and stakeholder role labels describe a fictional engagement; do not claim a real external Mettelo customer, employment, endorsement or privileged data access. No raw data is uploaded by this specification update.
 
-This is a **simulated confidential-client engagement** using official public/open data. The client label is fictional and intentionally anonymous. Do not imply a real external Mettelo customer, employment by that client, privileged access or confidential source data. Public source statistics remain public; the engagement framing does not make them confidential.
+**Client:** Confidential Regional Skills & Employer Engagement Authority. **Decision owner:** Director of Skills & Employment. **Team:** 6–8. **Duration:** 8 weeks. **Review:** quarterly skills participation and employer-engagement review.
 
-**Simulated sponsor:** Confidential Regional Skills & Employer Engagement Authority. **Duration:** 8 weeks. **Team:** 6–8 members. **Track:** Cross-Functional. **Sector:** Education / Skills / Economic Development.
+## Business problem and commission
 
-## Commission
+The skills authority needs to distinguish a reduction in starts from weaker participation or a shift in the age/level mix. These series count different activities and people, and the latest provisional period does not span the same months as completed academic years. A simple achievements-divided-by-starts chart can therefore imply a completion problem that the source cannot establish.
 
-Which geographic, age and apprenticeship-level segments warrant employer-engagement or participation-support investigation based on starts, participation and achievement patterns?
+> Which geographic, age and apprenticeship-level segments warrant employer-engagement or participation-support investigation based on starts, participation and achievement patterns?
 
-**Apprenticeship Skills Pipeline, Participation & Achievement Intelligence.** A regional skills authority wants to know whether apprenticeship starts are translating into participation and achievements, which age/level/geographic segments are weakening, and where employer or funding intervention may be required.
+## Core deliverable boundary
 
-## Outcomes and boundaries
+Use the agreed geography CSV. Completed-year trend baseline is 2020/21–2024/25; display 2025/26 August–April provisional figures separately. No year-on-year comparison with 2025/26 is permitted unless the same August–April window is available and verified. Use the publisher's per-100,000 population unit and available age/level/geography combinations.
 
-- Produce a starts/participation/achievements trend for comparable windows, with age/level/geography views only where present.
-- Identify up to ten weakening skills segments and separate declining volume from population-adjusted participation.
-- Compare count-led and rate-led support scenarios and list linked learner/employer evidence required before making progression claims.
+**Optional / out of core:** Learner completion/survival, course-duration effects, employer vacancies, subject alignment and individual progression need additional registered sources. Do not fetch the large learner files as a hidden core dependency.
 
-Deliver evidence for a management investigation decision, with an auditable shortlist of up to ten cases and at least two alternative prioritisation scenarios. Do not manufacture a full shortlist where the data supports fewer cases. Findings may conclude that evidence is insufficient.
+File availability does not prove dimensional support. Before analytical build, the team completes the source→field→metric→deliverable matrix in [data guidance](../data/README.md). Missing mandatory support blocks the gate and requires an approved official replacement or scope decision.
 
-**Data boundary:** Use only the agreed DfE geography/starts/participation/achievements/population CSV, intended 2020/21–2025/26. Confirm available dimensions and reporting windows before modelling. Keep incomplete 2025/26 periods separate. Do not substitute the previously discussed 135–150 MB learner files.
+## Analytical model
 
-**Model boundary:** Reporting year × coverage window × geography level/code × available age band × apprenticeship level × other published breakdowns. Population and learner measures may have different valid denominator coverage.
+Reporting year × coverage window × geography level/code × available age band × apprenticeship level × other published breakdowns. Population and learner measures may have different valid denominator coverage.
 
-**Out of scope:** real operational deployment, confidential case-level data, guaranteed savings/outcome improvements, paid-source dependencies and automatic allocation of services or funding. Optional modelling or enriched sources must not delay or replace the core D1–D12 pack.
+The source contract above controls where a general grain description is conditional. Do not create dimensions absent from the approved input.
 
-## Users and acceptance owners
+## Objectives
 
-- Simulated sponsor/review panel: approves commissioned question, changes and final investigation recommendation.
-- Domain service/planning user: checks whether diagnostic evidence supports the proposed review action.
-- Data steward: verifies source/version, licence, definitions, quality and retention evidence.
-- BI user: tests overview, drill-down, filters and limitations.
-- Independent reviewer: verifies calculations, rerun and requirement-to-test traceability.
+1. No core trend compares August–April provisional activity with August–July full-year activity.
+2. Every population rate uses per 100,000 and retains source age-reference limitations.
+3. Every segment action distinguishes participation support from a request for linked progression evidence.
 
-These are simulated stakeholder roles, not claims of access to a real organisation.
+## Business questions
 
-## Work allocation
+1. Where are starts, participation and achievements moving in different directions?
+2. Which available age/level/geographic segments show sustained decline?
+3. Where are comparable population-based participation gaps visible?
+4. How does the shortlist change when using counts versus valid population rates?
+5. What linked learner and employer evidence is needed to investigate progression or completion?
 
-| Accountable role | Project responsibility and evidence |
+## Cross-functional delivery model
+
+| Delivery role | Required project contribution |
 | --- | --- |
-| Business Analyst / Delivery Lead | Own the commissioned decision for Confidential Regional Skills & Employer Engagement Authority; record at least eight prioritised requirements, each linked to a deliverable and test; maintain weekly scope and decision logs. |
-| Data Governance Analyst | Register every 024 input and critical field; approve the frozen cohort, licence evidence, glossary and 100% headline-KPI lineage before analysis. |
-| Data Engineer | Implement the stated 024 analytical grain, ingestion and exclusions; deliver a clean rerun with row-count/checksum evidence and no unexplained key duplicates. |
-| BI Developer | Build executive, diagnostic and quality views for the commissioned decision; reconcile at least five 024 dashboard measures and test every visible filter. |
+| Business Analyst / Delivery Lead | Map the quarterly skills participation and employer-engagement review, document eight prioritised user requirements and maintain requirement→deliverable→test links; Director of Skills & Employment owns business approval. |
+| Data Governance Analyst | Own the MTL-XF-024 source/metadata register, cohort decision, licence evidence and 100% headline-measure lineage; resolve the specific risk: Partial-year comparisons and same-period achievement ratios can create false claims about weakening learner completion. |
+| Data Engineer | Implement the declared facts, keys, hierarchy and join controls; account for every source row and deliver a second-member reproducible run at the chosen MTL-XF-024 scope. |
+| BI Developer | Implement the quarterly skills participation and employer-engagement review overview, diagnostic and quality pages; reconcile five measures and ensure cohort/extension warnings survive filters and export. |
 | Skills Participation Analyst | Validate all eight measures and inspect comparable age/level/geographic trends. |
 | Employer Engagement & Policy Analyst | Write up to ten segment-specific investigation actions and the employer evidence needed for each. |
 | Skills Evaluation Analyst | Review cohort limitations and execute denominator, partial-year and unlinked-ratio tests. |
 
-At kickoff, replace role ownership with named team members and record review partners in `CONTRIBUTIONS.md`. Multiple roles per member are permitted, but critical calculations need a reviewer distinct from their author.
+Assign named team members and review partners at kickoff; roles may be combined, but a distinct member must review critical calculations and perform the final clean rerun. The executive and operational stakeholder roles are specified in [business context](BUSINESS_CONTEXT.md).
 
-## Working stages
+## Required investigation approach
 
-1. Week 1: agree at least eight requirements and define expected decisions.
-2. Week 2: inspect actual file schemas, establish available coverage and approve cohort freeze.
-3. Week 3: implement and reconcile analytical facts, keys and exclusions.
-4. Week 4: approve the 8-measure KPI catalogue and denominator rules.
-5. Week 5: complete five supported findings and domain comparisons.
-6. Week 6: compare two decision scenarios, produce the investigation shortlist and BI draft.
-7. Week 7: execute ten or more assurance/UAT scenarios, including project-specific edge cases.
-8. Week 8: independent rerun, executive briefing, presentation and final handover.
+Compare weakening completed-year segments ordered by absolute starts/participation decline and by compatible population-adjusted participation decline. Keep 2025/26 partial-year signals in a separate provisional watchlist. Use identical eligibility criteria for the compared scenarios; no completion-risk score.
 
-## Sign-off
+## Milestones and acceptance
 
-Follow [D1–D12](DELIVERABLES.md) and [AC1–AC12](ACCEPTANCE_CRITERIA.md). Approve only with reproducible evidence, no unresolved critical/high defects and transparent conditional-data limitations. A change in source availability must be logged; do not silently substitute a newer release.
+| Gate | Reviewers | Evidence / decision |
+| --- | --- | --- |
+| G1 — scope/source, end Week 2 | Business Analyst + Data Governance Analyst + domain specialist | Approve actual period, geography, grain, required input and field support in a source-to-deliverable matrix. Catalogue schema preview, rate unit and reporting-window footnotes verified; full file combinations, suppression, licences and freeze identity pending. Unsupported mandatory outputs remain blocked, not quietly reclassified as completed. |
+| G2 — model/metrics, end Week 4 | Data Engineer + domain specialist + independent reviewer | Approve row accounting, keys, hierarchy, join cardinality, five source reconciliations and all core metric definitions. |
+| G3 — analytical decision review, end Week 6 | Director of Skills & Employment + operational stakeholders | Compare weakening completed-year segments ordered by absolute starts/participation decline and by compatible population-adjusted participation decline. Keep 2025/26 partial-year signals in a separate provisional watchlist. Use identical eligibility criteria for the compared scenarios; no completion-risk score. Retain an evidence-insufficient case and a manual review route. |
+| G4 — release, end Week 8 | Simulated Mettelo panel + independent reviewer | Accept D1–D12 only after ten executed domain tests, five BI reconciliations, clean rerun evidence and resolution of all critical/high defects. |
+
+D1–D12 are defined in [deliverables](DELIVERABLES.md). AC1–AC12 and DT1–DT10 are defined in [acceptance criteria](ACCEPTANCE_CRITERIA.md). No real production deployment, automatic funding/service allocation, private-client data or paid-source dependency is required.

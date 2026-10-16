@@ -1,46 +1,56 @@
-# MTL-XF-024 — Source register
+# MTL-XF-024 — Source register and verification record
 
 **Project:** Apprenticeship Skills Pipeline, Participation & Achievement Intelligence  
-**Register date:** 16 October 2026  
-**Status:** agreed source references recovered; acquisition, payload verification and freeze approval pending.
+**Documentation review:** 16 October 2026  
+**State:** official documentation checked; acquired-file validation and freeze approval pending.  
+**Steward:** Data Governance Analyst, with the project domain specialist.
 
-## Cohort contract
+## Source/cohort decision
 
-Use only the agreed DfE geography/starts/participation/achievements/population CSV, intended 2020/21–2025/26. Confirm available dimensions and reporting windows before modelling. Keep incomplete 2025/26 periods separate. Do not substitute the previously discussed 135–150 MB learner files.
+Use the agreed geography CSV. Completed-year trend baseline is 2020/21–2024/25; display 2025/26 August–April provisional figures separately. No year-on-year comparison with 2025/26 is permitted unless the same August–April window is available and verified. Use the publisher's per-100,000 population unit and available age/level/geography combinations.
 
-## Source entries
+**Outside core:** Learner completion/survival, course-duration effects, employer vacancies, subject alignment and individual progression need additional registered sources. Do not fetch the large learner files as a hidden core dependency.
 
-### S1 — Geography / starts / participation / achievements / population CSV
+## Official publication and methodology references
 
-Exact agreed download URL (copy verbatim):
+| Official reference | URL |
+| --- | --- |
+| Official geography dataset and field preview | https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/a7743194-48bc-4e04-9102-4b0177ff4a84 |
+| Release | https://explore-education-statistics.service.gov.uk/find-statistics/apprenticeships/2025-26 |
+| Methodology navigation | https://explore-education-statistics.service.gov.uk/find-statistics/apprenticeships/2025-26/methodology |
+
+References above were inspected for this revision. They establish only the evidence described below; they are not a completed file acquisition, licence clearance or signed freeze.
+
+## Verification findings
+
+The catalogue lists age_summary, apps_level, starts, participation, achievements, population_estimate and three indicative rates per 100,000. Footnotes distinguish programme-based starts/achievements from learner participation and their age reference dates. The current 2025/26 entries cover August–April provisionally; earlier years cover complete academic years. Field presence does not guarantee every dimensional combination.
+
+**Field/reference mapping and acquisition instructions:** Map time_period/time_identifier, geographic_level, available geography code, apps_level and age_summary to the grain. Preserve population_estimate and *_rate_per_100000_population. Prefer publisher rates for reconciliation; compute alternatives only with the same valid denominator and recorded rounding.
+
+**Remaining status:** Catalogue schema preview, rate unit and reporting-window footnotes verified; full file combinations, suppression, licences and freeze identity pending.
+
+## Exact copyable file URLs
+
+Original agreed URLs are retained. Entries labelled required supplement/reference or fallback are explicit changes from the initial pack. Do not silently replace an input with a newer release.
+
+### S1 — Agreed core input 1
 
 ```text
 https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/a7743194-48bc-4e04-9102-4b0177ff4a84/csv
 ```
 
-- Publisher/source: DfE Apprenticeships — geography, starts, participation, achievements and population dataset. It contains 100,864 rows and covers 2020/21–2025/26.
-- Intended role: required core input.
-- Access expectation from agreement: £0, public download, no paid API required.
-- Verification state: URL recovered from the final agreed conversation; browser-only retrieval on 16 October 2026 could not validate the file contents. This is not a completed download/schema/licence check.
-- File acquisition state: **not downloaded or uploaded in this master-pack build**.
-- Actual release/coverage, retrieval UTC, resolved URL, filename, bytes, SHA-256, sheet/archive members, row counts and schema: **pending controlled acquisition**.
-- Licence and redistribution evidence: **pending inspection of the official publication and file notices**. Public accessibility alone does not establish reuse rights.
-- Required before analysis: metadata and coverage validation; freeze approval by Data Governance Analyst and domain analyst.
+**Acquisition:** pending; no source bytes uploaded. Record actual version, coverage, schema and licence before approving use. Core source reference; actual file identity remains to be verified.
 
-## Acquisition manifest requirements
+## File validation and licence record
 
-Create one row per acquired file, including archive members and all eight months where applicable:
+For every actually used input record:
 
-`source_id, original_url, resolved_url, retrieved_utc, publisher_release, filename, bytes, sha256, format, sheets_or_members, row_count, coverage_start, coverage_end, geography, schema_version, licence_evidence_path, approved_by, approval_date`
+`source_id, role_core_reference_fallback_extension, original_url, resolved_url, retrieved_utc, actual_release, filename, bytes, sha256, format, sheets_or_members, rows, geography, period_start, period_end, grain, schema_version, methodology_evidence, licence_notice, attribution, redistribution_conditions, approved_by, approval_date`
 
-Never enter guessed values. A missing field remains pending with an owner and reason. Source IDs above are local to this project. Preserve the actual publisher metadata and notices alongside the manifest.
+Retain the relevant publication/file notices, including exceptions and third-party conditions. Do not assume all publishers use the same licence. A stated publication licence does not remove the need to check file-specific terms. Keep unverified values pending; never invent a hash or approval.
 
-## Validation and fallback
+## Support and freeze decision
 
-Browser checks during this build could not inspect downloadable payloads consistently; unsupported download formats and retrieval failures do not prove a URL is broken. They also do not verify schema, current availability, advertised history, size or redistribution rights. Perform a controlled file acquisition before team analysis.
+Complete the [source-to-deliverable matrix](README.md). The domain specialist verifies actual grain, units, period comparability and supported metrics; the steward verifies identity and reuse terms. Required missing fields block dependent core outputs. Every activated extension is separately registered. Where a fallback is used, record why, which original it replaces, overlap handling and impact on outputs.
 
-If the exact link fails, locate the same release through the official publisher's publication series, record the replacement URL and compare version/coverage. Escalate any change to cohort, dimensions or reporting window through the project change log. No paid source or live API is required by the agreed design. No guarantee is made that a publisher URL will remain unchanged indefinitely.
-
-## Data sign-off
-
-The Data Governance Analyst and domain analyst sign the actual manifest after checking file identity, licence, coverage and definitions. Ingest only the signed cohort. Every headline metric must trace through transformations back to a registered source and field.
+If an agreed URL fails, seek the same official archived release and record evidence. A browser format limitation does not prove a file is unavailable, and a successful page fetch does not prove payload integrity. Preserve the frozen version and metadata in the approved location so future website changes do not silently alter the cohort.

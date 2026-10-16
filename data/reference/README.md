@@ -1,23 +1,9 @@
-# MTL-XF-024 — Reference data and mappings
+# MTL-XF-024 — Reference mappings
 
-## Purpose
+References support the approved [model and cohort](../README.md). Do not assume a mapping exists solely because entity names look similar.
 
-Maintain the code lists and crosswalks needed to implement this analytical grain:
+Required acquisition checks: Map time_period/time_identifier, geographic_level, available geography code, apps_level and age_summary to the grain. Preserve population_estimate and *_rate_per_100000_population. Prefer publisher rates for reconciliation; compute alternatives only with the same valid denominator and recorded rounding.
 
-Reporting year × coverage window × geography level/code × available age band × apprenticeship level × other published breakdowns. Population and learner measures may have different valid denominator coverage.
+For each mapping record source/version, licence, key, definition, valid dates, uniqueness, relationship cardinality, unmatched coverage and responsible domain steward. Quantify every unmapped category/entity. Keep totals distinct from components and do not multiply fact rows through many-to-many crosswalks.
 
-Potential references are the publisher's geography/entity identifiers, category hierarchies, period definitions, units, status codes and revision markers. Include only references actually needed by the model. Register any separately downloaded official file as an additional source.
-
-## Required mapping evidence
-
-Each reference needs source/version, licence, valid-from/to dates, key uniqueness, allowed values, business meaning, owner and transformation use. For each crosswalk record source key, target key, relationship cardinality, rationale and treatment of unmapped or changed entities. Quantify 100% of unmatched keys; do not silently drop them or infer a mapping from similar names.
-
-Avoid multiplying facts when a reference is many-to-many. Keep parent totals distinct from child categories. Non-official analyst-created groupings must be labelled as project assumptions and sensitivity-tested where they affect the investigation shortlist.
-
-## Domain constraints
-
-- Same-period starts and achievements refer to different learner cohorts; their ratio is not a completion rate.
-- Keep overlapping totals and suppressed values separate from additive segment records.
-- Do not infer local employer vacancies or labour-market alignment without additional governed evidence.
-
-The domain specialist approves category meaning and comparability. The Data Engineer supplies uniqueness, join-cardinality and coverage checks before the reference enters the curated model.
+Analyst-created groupings and eligibility thresholds are labelled project assumptions. If they affect case selection, show their effect in [the scenario comparison](../../project/ACCEPTANCE_CRITERIA.md). Candidate raw field names or download references in the source register still require actual version validation.

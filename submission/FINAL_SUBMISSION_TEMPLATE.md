@@ -1,121 +1,95 @@
 # MTL-XF-024 — Final submission: Apprenticeship Skills Pipeline, Participation & Achievement Intelligence
 
-Complete this template in your team repository as `submission/FINAL_SUBMISSION.md`. Replace prompts with evidence; leave unavailable items explicitly unavailable with reasons. This template itself is not completed delivery evidence.
+Complete in the team repository as `submission/FINAL_SUBMISSION.md`. This is a template, not delivery evidence. Replace prompts with actual links/results; never invent approvals, hashes or test outcomes.
 
 ## Team and version
 
-- Team repository URL:
-- Team name and individual GitHub accounts:
+- Team repository, name and member GitHub accounts:
+- Named delivery owners and independent reviewers:
+- Reviewed master specification URL/commit:
 - Final commit/tag and submission date:
-- Master specification URL and reviewed commit:
-- Delivery dates:
-- Named role owners and independent reviewers:
-- Engagement declaration: simulated confidential-client engagement using official public/open data; no real-client employment, endorsement or privileged access claimed.
+- Delivery start/end dates:
+- Declaration: simulated confidential-client engagement using official public/open data; no real-client employment, endorsement or privileged access claimed.
 
-## Commissioned decision
+## Business answer
 
-Which geographic, age and apprenticeship-level segments warrant employer-engagement or participation-support investigation based on starts, participation and achievement patterns?
+**Decision owner:** Director of Skills & Employment  
+**Decision:** Which geographic, age and apprenticeship-level segments warrant employer-engagement or participation-support investigation based on starts, participation and achievement patterns?
 
-State the answer, confidence, principal limitation and proposed investigation action.
+State the answer, confidence, principal limitation, proposed investigation and responsible stakeholder role. Explain how it fits the quarterly skills participation and employer-engagement review.
 
-## Actual cohort and provenance
+## Scope and data support
 
-Agreed boundary: Use only the agreed DfE geography/starts/participation/achievements/population CSV, intended 2020/21–2025/26. Confirm available dimensions and reporting windows before modelling. Keep incomplete 2025/26 periods separate. Do not substitute the previously discussed 135–150 MB learner files.
+Link approved core/extension contract and source-to-deliverable matrix. Record actual source versions, retrieval UTC, licences, checksums, schema/grain, periods, exclusions and freeze sign-off. Document any required supplement/fallback, why activated, what it replaces and how overlap is handled. Explicitly list unsupported mandatory requirements as blockers and optional items as unavailable with reasons.
 
-Record actual frozen files/versions, manifest/checksums, source-register link, licence evidence, retrieval timestamp, schema/coverage validation, inclusions/exclusions and approved deviations. Do not mark acquisition complete without evidence.
+## Delivery evidence
 
-## Evidence index
+| Deliverable | Artefact / owner / reviewer / status |
+| --- | --- |
+| D1 — Discovery & requirements | To complete |
+| D2 — Sources, governance & cohort contract | To complete |
+| D3 — Reproducible model & ingestion | To complete |
+| D4 — Quality, source reconciliation & exceptions | To complete |
+| D5 — Governed metric catalogue | To complete |
+| D6 — Domain assessment | To complete |
+| D7 — Investigation framework & scenarios | To complete |
+| D8 — Decision-support BI | To complete |
+| D9 — Assurance & simulated UAT | To complete |
+| D10 — Technical & operational handover | To complete |
+| D11 — Executive briefing & presentation | To complete |
+| D12 — Contribution & delivery record | To complete |
 
-| Deliverable | Artefact link | Owner / reviewer | Status / limitation |
-| --- | --- | --- | --- |
-| D1 — Discovery & decision requirements | To complete | To complete | To complete |
-| D2 — Governed sources & cohort | To complete | To complete | To complete |
-| D3 — Reproducible analytical model | To complete | To complete | To complete |
-| D4 — Quality & reconciliation | To complete | To complete | To complete |
-| D5 — KPI catalogue | To complete | To complete | To complete |
-| D6 — Domain analytical assessment | To complete | To complete | To complete |
-| D7 — Investigation decision framework | To complete | To complete | To complete |
-| D8 — BI decision-support product | To complete | To complete | To complete |
-| D9 — Independent assurance & UAT | To complete | To complete | To complete |
-| D10 — Technical & operational handover | To complete | To complete | To complete |
-| D11 — Executive recommendation | To complete | To complete | To complete |
-| D12 — Contribution & delivery record | To complete | To complete | To complete |
+## Project-specific success
 
-## Governed measures
+1. No core trend compares August–April provisional activity with August–July full-year activity. — evidence/status: To complete.
+2. Every population rate uses per 100,000 and retains source age-reference limitations. — evidence/status: To complete.
+3. Every segment action distinguishes participation support from a request for linked progression evidence. — evidence/status: To complete.
 
-| Required measure | Definition/source/test link | Result / unavailable reason |
-| --- | --- | --- |
-| Starts | To complete | To complete |
-| Participation | To complete | To complete |
-| Achievements | To complete | To complete |
-| Comparable starts change | To complete | To complete |
-| Population participation rate | To complete | To complete |
-| Achievement-to-starts activity ratio | To complete | To complete |
-| Segment share | To complete | To complete |
-| Coverage | To complete | To complete |
+## Five findings and investigation recommendation
 
-## Business questions and five findings
+For each business question link quantitative evidence, scope, comparison, magnitude, uncertainty and limitation. Include up to ten supported cases with reason codes, baseline/alternative position, missing evidence, operational owner and next review. Explain how scenario changes affect the recommendation and include an evidence-insufficient case.
 
-1. Where are starts, participation and achievements moving in different directions?
-2. Which available age/level/geographic segments show sustained decline?
-3. Where are comparable population-based participation gaps visible?
-4. How does the shortlist change when using counts versus valid population rates?
-5. What linked learner and employer evidence is needed to investigate progression or completion?
-
-For each question record the finding, quantitative evidence, period/grain, comparison, uncertainty, limitation and artefact link. Record an evidenced gap where the data cannot answer it.
-
-## Investigation shortlist and sensitivity
-
-Provide up to ten supported cases. For each: entity/segment, signal and magnitude, eligibility, reason code, scenario membership, proposed investigation, responsible role, missing evidence and review trigger. Compare at least two scenarios and explain membership/rank changes. Include a case where evidence is insufficient for action.
-
-## Acceptance and assurance
+## Acceptance and testing
 
 | Criterion | Pass/fail / evidence / reviewer |
 | --- | --- |
-| AC1 (D1) | To complete |
-| AC2 (D2) | To complete |
-| AC3 (D3) | To complete |
-| AC4 (D4) | To complete |
-| AC5 (D4–D5) | To complete |
-| AC6 (D5) | To complete |
-| AC7 (D6) | To complete |
-| AC8 (D7) | To complete |
-| AC9 (D8) | To complete |
-| AC10 (D9) | To complete |
-| AC11 (D10–D11) | To complete |
-| AC12 (D12) | To complete |
+| AC1 | To complete |
+| AC2 | To complete |
+| AC3 | To complete |
+| AC4 | To complete |
+| AC5 | To complete |
+| AC6 | To complete |
+| AC7 | To complete |
+| AC8 | To complete |
+| AC9 | To complete |
+| AC10 | To complete |
+| AC11 | To complete |
+| AC12 | To complete |
 
-Record at least ten executed UAT scenarios, expected/actual results, defect severity/disposition and five reconciled BI measures. Mandatory cases:
+| Domain test | Actual result / evidence / tester / reviewer |
+| --- | --- |
+| DT1 — Reconcile five starts, participation or achievements measures to published cells. | To complete |
+| DT2 — Reject a population denominator with mismatched age or geography. | To complete |
+| DT3 — Test that a partial-year starts count cannot be compared with a full year. | To complete |
+| DT4 — Verify achievement-to-starts ratios are never labelled completion rates, including when above one. | To complete |
+| DT5 — 500 participants / 100,000 compatible population | To complete |
+| DT6 — 2025/26 August–April versus prior August–July | To complete |
+| DT7 — Starts and participation use different published age conventions | To complete |
+| DT8 — One learner has two starts but one participation count | To complete |
+| DT9 — An age/level total appears beside component rows | To complete |
+| DT10 — A latest-year provisional card is exported | To complete |
 
-1. Reconcile five starts, participation or achievements measures to published cells.
-2. Reject a population denominator with mismatched age or geography.
-3. Test that a partial-year starts count cannot be compared with a full year.
-4. Verify achievement-to-starts ratios are never labelled completion rates, including when above one.
+Link expected outcomes in [the master acceptance criteria](https://github.com/Mettelo/MTL-XF-024-Apprenticeship-Skills-Pipeline-Participation-Achievement-Intelligence/blob/main/project/ACCEPTANCE_CRITERIA.md) or a retained copy tied to the reviewed specification commit. Record all additional BI/filter tests, five source checks, five BI reconciliations, defect severity/disposition and accepted limitations. Synthetic test values must be labelled synthetic.
 
-## Reproducible handover
+## Reproducibility and executive delivery
 
-- Environment/tool versions and dependencies:
-- Input snapshot location and checksum verification:
-- Clean run instructions and output locations:
-- Independent rerun reviewer/date/duration/results:
-- Reconciliation evidence and permitted rounding:
-- Refresh/change process and known failure modes:
+- Environment/dependencies, input manifest and clean run steps:
+- Independent reviewer/date/duration/output-equivalence evidence:
+- Refresh/fallback/change procedure and known failure modes:
+- Dashboard/free review instructions and static export:
+- Maximum two-page briefing and 15–20 minute presentation:
+- Proposed benefit measures and actual measured rerun time; no invented before/after savings:
 
-## Executive delivery
+## Contributions and review
 
-- Two-page briefing link:
-- Presentation link and 15–20 minute duration:
-- Dashboard/free access instructions and static export:
-- Recommendations, missing evidence, responsible roles and next review:
-
-## Contributions
-
-For every member link authored artefacts, review work, issues/PRs/commits and presentation/handover contribution. Link `CONTRIBUTIONS.md`; commit count alone is insufficient.
-
-## Limitations and review decision
-
-- Same-period starts and achievements refer to different learner cohorts; their ratio is not a completion rate.
-- Keep overlapping totals and suppressed values separate from additive segment records.
-- Do not infer local employer vacancies or labour-market alignment without additional governed evidence.
-
-Add actual limitations, optional extensions, unresolved accepted issues and their impacts. Record simulated panel review date, reviewers and decision only after review occurs. Do not claim real operational savings or outcome improvements.
+Link `CONTRIBUTIONS.md` and every member's authored artefacts, reviews, issues/PRs/commits and presentation/handover work. Record simulated panel reviewers/date/decision only after the review occurs. Include unresolved limitations and approved scope changes; do not claim real operational outcomes.

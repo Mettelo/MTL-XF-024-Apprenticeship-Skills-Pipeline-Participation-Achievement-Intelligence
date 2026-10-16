@@ -1,130 +1,82 @@
 # MTL-XF-024 — Apprenticeship Skills Pipeline, Participation & Achievement Intelligence
 
-**Mettelo Project Studio** · Cross-Functional · Master specification  
+**Mettelo Project Studio** · Cross-Functional · Master project specification  
 **Client:** Confidential Regional Skills & Employer Engagement Authority  
+**Accountable simulated executive:** Director of Skills & Employment  
 **Sector:** Education / Skills / Economic Development  
-**Status:** Pre-launch; documentation ready, data acquisition/freeze pending  
-**Recommended team:** 6–8 people · **Delivery window:** 8 weeks  
-**Master repository:** `Mettelo/MTL-XF-024-Apprenticeship-Skills-Pipeline-Participation-Achievement-Intelligence`
+**Team:** 6–8 people · **Window:** 8 weeks  
+**Status:** documentation revised; file acquisition and cohort freeze pending  
+**Review cadence:** quarterly skills participation and employer-engagement review
 
-> This is a **simulated confidential-client engagement** using official public/open data. The client label is fictional and intentionally anonymous. Do not imply a real external Mettelo customer, employment by that client, privileged access or confidential source data. Public source statistics remain public; the engagement framing does not make them confidential.
+> This is a **simulated confidential-client engagement using official public/open data**. Client and stakeholder role labels describe a fictional engagement; do not claim a real external Mettelo customer, employment, endorsement or privileged data access. No raw data is uploaded by this specification update.
 
-## Business challenge
+## Business problem
 
-**Apprenticeship Skills Pipeline, Participation & Achievement Intelligence.** A regional skills authority wants to know whether apprenticeship starts are translating into participation and achievements, which age/level/geographic segments are weakening, and where employer or funding intervention may be required.
-
-Current reporting fragments the evidence needed for a repeatable management review. The team must explain which signals are reliable, which comparisons are valid and where further investigation is needed. No budget, operational failure or improvement outcome is asserted as an observed client fact.
+The skills authority needs to distinguish a reduction in starts from weaker participation or a shift in the age/level mix. These series count different activities and people, and the latest provisional period does not span the same months as completed academic years. A simple achievements-divided-by-starts chart can therefore imply a completion problem that the source cannot establish.
 
 ## Commissioned decision
 
 > Which geographic, age and apprenticeship-level segments warrant employer-engagement or participation-support investigation based on starts, participation and achievement patterns?
 
-The product supports a simulated stakeholder review. A dashboard alone is insufficient: the recommendation must be traceable to governed definitions, a reproducible model, reconciled analysis and a transparent investigation framework.
+## Practical use
 
-## Business questions
+The Director compares completed-year participation across compatible areas, then opens the latest provisional view as a separate panel. An age/level segment with weaker participation may warrant employer outreach, while an apparent achievements-to-starts imbalance prompts a request for linked learner progression evidence. The product does not claim that current starters have already completed or dropped out.
 
-- Where are starts, participation and achievements moving in different directions?
-- Which available age/level/geographic segments show sustained decline?
-- Where are comparable population-based participation gaps visible?
-- How does the shortlist change when using counts versus valid population rates?
-- What linked learner and employer evidence is needed to investigate progression or completion?
+The full [business context](project/BUSINESS_CONTEXT.md) names operational stakeholders, decisions, risks and proposed benefit measures.
 
-## Approved data and cohort
-
-DfE Apprenticeships — geography, starts, participation, achievements and population dataset. It contains 100,864 rows and covers 2020/21–2025/26.
-
-Use only the agreed DfE geography/starts/participation/achievements/population CSV, intended 2020/21–2025/26. Confirm available dimensions and reporting windows before modelling. Keep incomplete 2025/26 periods separate. Do not substitute the previously discussed 135–150 MB learner files.
-
-Exact copyable URLs and acquisition gates are in [SOURCE_REGISTER.md](data/SOURCE_REGISTER.md). No raw data is uploaded by this build. Source coverage and size statements inherited from the agreement are expected values until controlled acquisition verifies them; current URLs are not a substitute for a frozen file manifest.
-
-## What the team must build
+## What must be delivered
 
 1. Produce a starts/participation/achievements trend for comparable windows, with age/level/geography views only where present.
 2. Identify up to ten weakening skills segments and separate declining volume from population-adjusted participation.
 3. Compare count-led and rate-led support scenarios and list linked learner/employer evidence required before making progression claims.
 
-Produce the full D1–D12 delivery pack: discovery, governance, ingestion/model, quality, KPI catalogue, analysis, decision framework, BI, assurance/UAT, handover, executive briefing and contribution record. [Deliverables](project/DELIVERABLES.md) defines locations, dates and evidence for each.
+The complete D1–D12 pack includes discovery, source governance, ingestion/model, quality, metric catalogue, analysis, investigation scenarios, BI, assurance/UAT, independent handover, executive briefing and contribution evidence. A dashboard by itself does not satisfy the commission.
 
-## Core measures
+## Fixed core and optional work
 
-| Metric | Required definition / calculation |
-| --- | --- |
-| Starts | Published apprenticeship starts for the exact period and segment. |
-| Participation | Published participation measure; retain publisher definition of persons/episodes and period. |
-| Achievements | Published achievements for the exact period and segment. |
-| Comparable starts change | Current starts minus previous matching-window starts, plus percentage change where base > 0. |
-| Population participation rate | 1,000 × participation / compatible published population where ages, geography and period align. |
-| Achievement-to-starts activity ratio | Achievements / starts in the same period; label as an unlinked activity ratio, never a completion probability. |
-| Segment share | 100 × segment starts / compatible parent starts, excluding overlapping categories. |
-| Coverage | Valid non-suppressed segment-period cells / expected selected cells. |
+**Core:** Use the agreed geography CSV. Completed-year trend baseline is 2020/21–2024/25; display 2025/26 August–April provisional figures separately. No year-on-year comparison with 2025/26 is permitted unless the same August–April window is available and verified. Use the publisher's per-100,000 population unit and available age/level/geography combinations.
 
-## Cross-functional ownership
+**Extensions:** Learner completion/survival, course-duration effects, employer vacancies, subject alignment and individual progression need additional registered sources. Do not fetch the large learner files as a hidden core dependency.
 
-| Accountable role | Project responsibility and evidence |
-| --- | --- |
-| Business Analyst / Delivery Lead | Own the commissioned decision for Confidential Regional Skills & Employer Engagement Authority; record at least eight prioritised requirements, each linked to a deliverable and test; maintain weekly scope and decision logs. |
-| Data Governance Analyst | Register every 024 input and critical field; approve the frozen cohort, licence evidence, glossary and 100% headline-KPI lineage before analysis. |
-| Data Engineer | Implement the stated 024 analytical grain, ingestion and exclusions; deliver a clean rerun with row-count/checksum evidence and no unexplained key duplicates. |
-| BI Developer | Build executive, diagnostic and quality views for the commissioned decision; reconcile at least five 024 dashboard measures and test every visible filter. |
-| Skills Participation Analyst | Validate all eight measures and inspect comparable age/level/geographic trends. |
-| Employer Engagement & Policy Analyst | Write up to ten segment-specific investigation actions and the employer evidence needed for each. |
-| Skills Evaluation Analyst | Review cohort limitations and execute denominator, partial-year and unlinked-ratio tests. |
+Source support is checked at the Week 2 gate. A required output is blocked until its fields and cohort are verified; it cannot pass acceptance through a generic “data unavailable” disclaimer. An explicitly optional extension may remain unavailable with a reason. See [exact source URLs and verification evidence](data/SOURCE_REGISTER.md).
 
-Roles may be combined by a smaller team, but each responsibility needs a named owner. A different member reviews critical calculations and final evidence wherever practical.
+## Measurable project outcomes
 
-## Interpretation rules
+1. No core trend compares August–April provisional activity with August–July full-year activity.
+2. Every population rate uses per 100,000 and retains source age-reference limitations.
+3. Every segment action distinguishes participation support from a request for linked progression evidence.
+
+All headline metrics require field lineage; five source values and five BI measures must reconcile. DT1–DT10 must be executed, a second member must reproduce the core outputs, and no critical/high defect may remain. These assess delivery quality; real-world savings or service improvement are not claimed.
+
+## Investigation rules
+
+Compare weakening completed-year segments ordered by absolute starts/participation decline and by compatible population-adjusted participation decline. Keep 2025/26 partial-year signals in a separate provisional watchlist. Use identical eligibility criteria for the compared scenarios; no completion-risk score.
 
 - Same-period starts and achievements refer to different learner cohorts; their ratio is not a completion rate.
 - Keep overlapping totals and suppressed values separate from additive segment records.
 - Do not infer local employer vacancies or labour-market alignment without additional governed evidence.
 
-## Measurable success
+## Team and stakeholder ownership
 
-- All source files and transformations have provenance and licence evidence; approved inputs have SHA-256 manifests.
-- All headline metrics have tested definitions and source-field lineage.
-- At least five published values and five dashboard measures reconcile with declared source rounding.
-- At least five findings address the business questions and quantify materiality.
-- Up to ten investigation cases have evidence, reason codes, owners and limitations; at least two priority scenarios are compared.
-- At least ten UAT scenarios pass or have explicitly accepted low-impact limitations; no critical/high defect remains.
-- A second member reproduces the core outputs from the same frozen inputs.
+Director of Skills & Employment approves business scope and the investigation recommendation. The Business Analyst, Data Governance Analyst, Data Engineer and BI Developer work with the specialist roles in the [project brief](project/PROJECT_BRIEF.md). Assign individual owners at kickoff and record substantive work and independent reviews in `CONTRIBUTIONS.md`.
 
-These are delivery acceptance thresholds, not promises of real-world service improvement. See [acceptance criteria](project/ACCEPTANCE_CRITERIA.md).
+## Delivery plan
 
-## Delivery sequence
-
-Weeks 1–2: decision requirements, source inspection and freeze approval. Weeks 3–4: model, reconciliation and KPI definitions. Weeks 5–6: analysis, investigation framework and BI draft. Weeks 7–8: UAT, independent rerun, briefing and handover.
+Weeks 1–2: decision requirements and verified cohort. Weeks 3–4: model, reconciliation and metric definitions. Weeks 5–6: analytical findings, alternative investigation scenarios and BI draft. Weeks 7–8: simulated UAT, independent rerun, executive briefing and handover.
 
 ## Start here
 
-1. Read the [project brief](project/PROJECT_BRIEF.md) and [business context](project/BUSINESS_CONTEXT.md).
-2. Review [deliverables](project/DELIVERABLES.md), [acceptance criteria](project/ACCEPTANCE_CRITERIA.md) and [governance](project/GOVERNANCE.md).
-3. Inspect the [data workspace](data/README.md), [source register](data/SOURCE_REGISTER.md), [raw guidance](data/raw/README.md), [reference guidance](data/reference/README.md) and [metadata guidance](data/metadata/README.md).
-4. Create `MTL-XF-024-<team-name>` under the **Mettelo GitHub organisation**, add each member's individual account and follow the [team repository standard](submission/TEAM_REPOSITORY_STANDARD.md).
-5. Use the [submission guide](submission/SUBMISSION_GUIDE.md) and [final submission template](submission/FINAL_SUBMISSION_TEMPLATE.md).
+1. [Project brief](project/PROJECT_BRIEF.md) and [business context](project/BUSINESS_CONTEXT.md).
+2. [D1–D12 deliverables and metric contracts](project/DELIVERABLES.md).
+3. [AC1–AC12 and DT1–DT10 acceptance tests](project/ACCEPTANCE_CRITERIA.md).
+4. [Governance and sign-off](project/GOVERNANCE.md).
+5. [Data workspace](data/README.md), [source register](data/SOURCE_REGISTER.md), [raw](data/raw/README.md), [reference](data/reference/README.md) and [metadata](data/metadata/README.md) guidance.
+6. [Team repository standard](submission/TEAM_REPOSITORY_STANDARD.md), [submission guide](submission/SUBMISSION_GUIDE.md) and [final template](submission/FINAL_SUBMISSION_TEMPLATE.md).
 
 ## Master and team repositories
 
-This master holds the challenge specification. Teams deliver their analysis and artefacts in their own Mettelo organisation repository. Do not submit team work by replacing this master specification. Use issues, branches, meaningful commits, PRs and reviews to demonstrate actual collaboration.
+This master repository holds the Mettelo-controlled specification. Create `MTL-XF-024-<team-name>` under the **Mettelo GitHub organisation** and add every member's individual account. Delivery analysis, code, tests, BI and contribution evidence belong in that team repository. Use issues, branches, meaningful commits, PRs and reviews where practical.
 
-## Specification map
-
-```text
-README.md
-project/README.md
-project/PROJECT_BRIEF.md
-project/BUSINESS_CONTEXT.md
-project/DELIVERABLES.md
-project/ACCEPTANCE_CRITERIA.md
-project/GOVERNANCE.md
-data/README.md
-data/SOURCE_REGISTER.md
-data/raw/README.md
-data/reference/README.md
-data/metadata/README.md
-submission/README.md
-submission/TEAM_REPOSITORY_STANDARD.md
-submission/SUBMISSION_GUIDE.md
-submission/FINAL_SUBMISSION_TEMPLATE.md
-```
+The required master areas are `project/`, `data/` (including raw/reference/metadata guidance) and `submission/`; [the documentation index](project/README.md) explains their authority and current revision.
 
 **Mettelo — Built for What’s Next**
