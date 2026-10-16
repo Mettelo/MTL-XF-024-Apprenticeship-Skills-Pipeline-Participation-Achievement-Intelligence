@@ -4,7 +4,7 @@
 **Client:** Confidential Regional Skills & Employer Engagement Authority  
 **Accountable simulated executive:** Director of Skills & Employment  
 **Sector:** Education / Skills / Economic Development  
-**Team:** 6–8 people · **Window:** 8 weeks  
+**Team:** 3–5 people · **Window:** 8 weeks  
 **Status:** documentation revised; file acquisition and cohort freeze pending  
 **Review cadence:** quarterly skills participation and employer-engagement review
 
