@@ -10,9 +10,15 @@
 
 > This is a **simulated confidential-client engagement using official public/open data**. Client and stakeholder role labels describe a fictional engagement; do not claim a real external Mettelo customer, employment, endorsement or privileged data access. No raw data is uploaded by this specification update.
 
+## Business setting
+
+The simulated regional skills authority plans employer-engagement and participation-support activity through a quarterly review. Its teams need to decide which geographic, age and apprenticeship-level segments deserve closer enquiry before commissioning new outreach.
+
 ## Business problem
 
-The skills authority needs to distinguish a reduction in starts from weaker participation or a shift in the age/level mix. These series count different activities and people, and the latest provisional period does not span the same months as completed academic years. A simple achievements-divided-by-starts chart can therefore imply a completion problem that the source cannot establish.
+The Director of Skills & Employment needs to target employer-engagement and participation-support work where the apprenticeship pipeline appears to be weakening. Separate starts, participation and achievements reports do not show whether an apparent change reflects fewer entrants, a different age/level mix or a non-comparable reporting window.
+
+An unsupported completion narrative could send staff towards provider-performance enquiries when the real question is participation or employer demand. The commission is to provide a comparable segment review and an outreach agenda, while clearly separating what aggregate annual activity can show from questions requiring linked learner or employer evidence.
 
 ## Commissioned decision
 
@@ -20,9 +26,13 @@ The skills authority needs to distinguish a reduction in starts from weaker part
 
 ## Practical use
 
-The Director compares completed-year participation across compatible areas, then opens the latest provisional view as a separate panel. An age/level segment with weaker participation may warrant employer outreach, while an apparent achievements-to-starts imbalance prompts a request for linked learner progression evidence. The product does not claim that current starters have already completed or dropped out.
+At the quarterly meeting, the Director reviews completed-year starts and participation by supported geography, age and level. A segment with falling counts but stable population-adjusted participation is compared with one weakening on both measures. The Skills Evaluation Lead checks comparability and suppression, while the Employer Engagement Lead identifies the specific employer or participation question to investigate.
 
-The full [business context](project/BUSINESS_CONTEXT.md) names operational stakeholders, decisions, risks and proposed benefit measures.
+The meeting commissions a scoped outreach enquiry or requests linked progression evidence; it does not label a provider as having a completion problem from the aggregate ratios. The latest 2025/26 provisional panel is reviewed separately and feeds a watchlist until a compatible period comparison is available.
+
+**Management handover:** A skills review pack with completed-year segment trends, a separately labelled provisional watchlist, count-led and rate-led scenarios, and an employer-engagement enquiry register. Each enquiry must name the segment, supported signal, lead role and evidence needed to distinguish participation from learner progression.
+
+The full [business context](project/BUSINESS_CONTEXT.md) sets out stakeholders, decisions, evidence limits and proposed benefit measures.
 
 ## What must be delivered
 

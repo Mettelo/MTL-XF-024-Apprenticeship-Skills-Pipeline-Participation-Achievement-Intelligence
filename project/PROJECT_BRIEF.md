@@ -6,9 +6,17 @@ This is a **simulated confidential-client engagement using official public/open 
 
 ## Business problem and commission
 
-The skills authority needs to distinguish a reduction in starts from weaker participation or a shift in the age/level mix. These series count different activities and people, and the latest provisional period does not span the same months as completed academic years. A simple achievements-divided-by-starts chart can therefore imply a completion problem that the source cannot establish.
+The simulated regional skills authority plans employer-engagement and participation-support activity through a quarterly review. Its teams need to decide which geographic, age and apprenticeship-level segments deserve closer enquiry before commissioning new outreach.
+
+The Director of Skills & Employment needs to target employer-engagement and participation-support work where the apprenticeship pipeline appears to be weakening. Separate starts, participation and achievements reports do not show whether an apparent change reflects fewer entrants, a different age/level mix or a non-comparable reporting window.
+
+An unsupported completion narrative could send staff towards provider-performance enquiries when the real question is participation or employer demand. The commission is to provide a comparable segment review and an outreach agenda, while clearly separating what aggregate annual activity can show from questions requiring linked learner or employer evidence.
 
 > Which geographic, age and apprenticeship-level segments warrant employer-engagement or participation-support investigation based on starts, participation and achievement patterns?
+
+**Required management handover:** A skills review pack with completed-year segment trends, a separately labelled provisional watchlist, count-led and rate-led scenarios, and an employer-engagement enquiry register. Each enquiry must name the segment, supported signal, lead role and evidence needed to distinguish participation from learner progression.
+
+See [the management use case](BUSINESS_CONTEXT.md#practical-management-use-case) for how the review meeting uses this evidence.
 
 ## Core deliverable boundary
 

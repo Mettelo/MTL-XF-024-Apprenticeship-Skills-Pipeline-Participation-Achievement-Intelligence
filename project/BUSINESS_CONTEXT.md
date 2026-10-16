@@ -6,15 +6,19 @@
 
 This fictional directorate/board is an engagement scenario, not an assertion of a real client's circumstances. The source data remains official public/open data.
 
+## Business setting and immediate planning need
+
+The simulated regional skills authority plans employer-engagement and participation-support activity through a quarterly review. Its teams need to decide which geographic, age and apprenticeship-level segments deserve closer enquiry before commissioning new outreach.
+
 ## Business problem
 
-The skills authority needs to distinguish a reduction in starts from weaker participation or a shift in the age/level mix. These series count different activities and people, and the latest provisional period does not span the same months as completed academic years. A simple achievements-divided-by-starts chart can therefore imply a completion problem that the source cannot establish.
+The Director of Skills & Employment needs to target employer-engagement and participation-support work where the apprenticeship pipeline appears to be weakening. Separate starts, participation and achievements reports do not show whether an apparent change reflects fewer entrants, a different age/level mix or a non-comparable reporting window.
+
+An unsupported completion narrative could send staff towards provider-performance enquiries when the real question is participation or employer demand. The commission is to provide a comparable segment review and an outreach agenda, while clearly separating what aggregate annual activity can show from questions requiring linked learner or employer evidence.
 
 ## Why the current process is insufficient
 
-The current scenario relies on separately prepared reports without a common source/metric contract. The material failure to prevent is specific: Partial-year comparisons and same-period achievement ratios can create false claims about weakening learner completion.
-
-This creates uncertainty over which cases need investigation and which comparisons should be rejected. No quantified loss, backlog, budget deficit or service failure is invented as a client fact.
+The review compares completed academic years with the latest provisional return and sometimes treats achievements divided by starts as learner progression. Those comparisons can create an apparent drop that is caused by coverage or cohort differences. The replacement needs a completed-year baseline, a separate provisional watchlist and a clear distinction between counts and population-adjusted participation.
 
 ## Stakeholders and decisions
 
@@ -32,15 +36,15 @@ Which geographic, age and apprenticeship-level segments warrant employer-engagem
 
 ## Practical management use case
 
-The Director compares completed-year participation across compatible areas, then opens the latest provisional view as a separate panel. An age/level segment with weaker participation may warrant employer outreach, while an apparent achievements-to-starts imbalance prompts a request for linked learner progression evidence. The product does not claim that current starters have already completed or dropped out.
+At the quarterly meeting, the Director reviews completed-year starts and participation by supported geography, age and level. A segment with falling counts but stable population-adjusted participation is compared with one weakening on both measures. The Skills Evaluation Lead checks comparability and suppression, while the Employer Engagement Lead identifies the specific employer or participation question to investigate.
+
+The meeting commissions a scoped outreach enquiry or requests linked progression evidence; it does not label a provider as having a completion problem from the aggregate ratios. The latest 2025/26 provisional panel is reviewed separately and feeds a watchlist until a compatible period comparison is available.
 
 ## Current-to-target workflow
 
-1. **Before review:** analyst registers the approved files, coverage and definitions; steward checks the cohort and unresolved exceptions.
-2. **At review:** Director of Skills & Employment opens the overview, then inspects diagnostics and the underlying eligible population before considering a case.
-3. **Challenge:** the relevant stakeholder compares the alternative scenario and asks whether the signal survives missingness, comparability and denominator checks.
-4. **Action:** each accepted case records investigation type, responsible service role, missing evidence, next review and what finding would reverse the recommendation.
-5. **Follow-up:** the next quarterly skills participation and employer-engagement review records evidence received and the decision, without claiming the analytical signal itself caused an improvement.
+**Target management handover:** A skills review pack with completed-year segment trends, a separately labelled provisional watchlist, count-led and rate-led scenarios, and an employer-engagement enquiry register. Each enquiry must name the segment, supported signal, lead role and evidence needed to distinguish participation from learner progression.
+
+The meeting's decision record must contain: the selected case and reporting period; the source-backed finding; the decision to investigate, watch, clarify or close; the responsible stakeholder role; the specific additional evidence requested; and the next review point. Add the evidence that would reverse or narrow the recommendation. A watchlist or no-action conclusion is valid when supported; do not fill the shortlist simply to reach ten cases.
 
 ## Required analytical response
 
@@ -56,7 +60,9 @@ The Director compares completed-year participation across compatible areas, then
 
 ## Proposed benefit monitoring
 
-At kickoff, record a baseline review process and propose measures for: time to regenerate the agreed evidence pack; proportion of agenda recommendations with a complete evidence chain; and proportion of accepted investigations with a role owner and next review. The target for recommendation traceability and ownership is 100%; regeneration time is measured during the independent rerun, with no fabricated pre-project baseline or claimed reduction. These are proposed management measures, not achieved service benefits.
+Measure whether every outreach proposal states a supported segment and compatible period, and whether every progression question is explicitly routed to a linked-data request; target 100%. Simulated users must distinguish a count decline from a population-rate decline. Increased participation or achievements can only be assessed after delivery and with compatible later data.
+
+Record the preparation and review baseline at kickoff, then measure evidence-pack regeneration during the independent rerun. No pre-project time saving or achieved operational benefit is assumed. The eight-week engagement is assessed on the usability and traceability of the decision pack; later service outcomes require separate follow-up.
 
 ## Scope and evidence limits
 
