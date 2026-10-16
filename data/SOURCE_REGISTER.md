@@ -39,7 +39,11 @@ Original agreed URLs are retained. Entries labelled required supplement/referenc
 https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/a7743194-48bc-4e04-9102-4b0177ff4a84/csv
 ```
 
-**Acquisition:** pending; no source bytes uploaded. Record actual version, coverage, schema and licence before approving use. Core source reference; actual file identity remains to be verified.
+**Acquisition:** a candidate file already exists in the repository; validation/provenance and freeze approval remain pending. No source bytes were uploaded by this revision. Record actual version, coverage, schema and licence before approving use. Core source reference; actual file identity remains to be verified.
+
+## Existing raw file observed during this revision
+
+The repository already contains [app-geography-population-202526-q3.csv](raw/app-geography-population-202526-q3.csv), listed by GitHub as 20,469,846 bytes with Git blob SHA `c4e0571fbdce02f9975a8a6d6ca304b8c64ff18d`. It was preserved unchanged; this update did not upload it. The connector returned no preview content for the large file, so field/row validation, publisher-version matching, SHA-256 and freeze approval remain pending. A Git blob SHA is not the required acquisition SHA-256.
 
 ## File validation and licence record
 

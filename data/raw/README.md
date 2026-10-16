@@ -1,6 +1,6 @@
 # MTL-XF-024 — Raw input guidance
 
-**Current state:** no raw data uploaded by this specification revision.
+**Current state:** the pre-existing `app-geography-population-202526-q3.csv` (20,469,846 bytes) is preserved unchanged. No raw data was uploaded by this specification revision. Its provenance, payload validation, SHA-256 and freeze approval remain pending; the filename alone does not verify the cohort.
 
 Use only the files activated under [SOURCE_REGISTER.md](../SOURCE_REGISTER.md) and the approved [core contract](../README.md). Original bytes belong here only after later acquisition/upload authorisation and verified redistribution conditions. Keep cleaned extracts, corrections and dashboard outputs elsewhere.
 
